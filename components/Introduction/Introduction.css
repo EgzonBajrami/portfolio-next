@@ -1,0 +1,98 @@
+.introduction-container{
+    padding:0px 50px 0px 50px;
+}
+
+.introduction-title{
+    margin-top:100px;
+}
+
+.introduction-title h1{
+    font-family:"Conthrax";
+    font-weight:700;
+    font-size:40px;
+    line-height:43px;
+    color:#d7d0d0;
+}
+
+.introduction-title h2{
+    font-family:"Tactic Round Bold";
+    font-weight:700;
+    font-size:30px;
+    line-height:43px;
+    color:#d7d0d0;
+}
+
+.introduction-title p{
+    font-family:"Conthrax Light";
+    font-weight:400;
+    font-size:22px;
+    line-height:25px;
+    color:#888585;
+}
+
+.introduction-navigation{
+    margin-top:100px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.introduction-navigation li{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:15px;
+}
+
+.introduction-navigation li span{
+    display:flex;
+    width:60px;
+    height:3px;
+    background: rgb(100 116 139);
+    transition:.2s ease-in-out;
+}
+
+.introduction-navigation li a{
+    font-family:"Tactic Round";
+    font-size:22px;
+    text-decoration: none;
+    color: rgb(100 116 139);
+    transition:.2s ease-in-out;
+    text-transform:uppercase;
+}
+
+.introduction-navigation .active span{
+    width:80px ;
+    background:rgb(226 232 240);
+}
+
+.introduction-navigation .active a{
+    transform:translateX(20px);
+    color:rgb(226 232 240);
+}
+
+.introduction-navigation .not-active:hover span{
+    width:80px;
+    background:rgb(226 232 240);
+}
+
+.introduction-navigation .not-active:hover a{
+    transform:translateX(20px);
+    color:rgb(226 232 240);
+}
+
+.contact-me{
+    display:flex;
+    margin-top:100px;
+    padding:0 0 0 32px;
+    gap:20px;
+}
+
+.contact-me a svg{
+    transition: all .2s ease-in-out;
+}
+
+.contact-me a:hover svg{
+    fill: rgb(226, 232, 240);
+    transform:scale(1.05);
+}

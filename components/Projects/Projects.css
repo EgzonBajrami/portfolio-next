@@ -1,0 +1,55 @@
+.projects-holder{
+    margin-top:100px;
+}
+
+.remove-decoration{
+    text-decoration:none;
+}
+
+.projects-wrapper{
+    display:grid;
+    grid-template: auto / 20% 80%;
+    gap:30px;
+    padding:30px;
+    border-radius:15px;
+    margin-top:30px;
+}
+
+.projects-wrapper:hover{
+    opacity:100;
+    box-shadow:inset 0 1px 0 rgba(148,163,184,0.1);
+    background-color:rgba(148,163,184,0.1);
+}
+
+.image-holder{
+    width:100%;
+
+}
+.image-holder img{
+    max-width:100%;
+    height:auto;
+    object-fit: contain;
+}
+
+
+.project-title p{
+    font-family:"Tactic Round Regular";
+    font-size:18px;
+    line-height:20px;
+    margin:0;
+    color:rgb(226 232 240);
+    text-decoration:none;
+}
+
+.project-text{
+    margin-top:20px;
+}
+
+.project-text p{
+    font-family:"Tactic Round Regular";
+    font-size:16px;
+    line-height:18px;
+    padding:0px 25px 0px 0px;
+    color: rgb(100 116 139);
+    text-decoration:none;
+}

@@ -1,0 +1,28 @@
+@font-face{
+    font-family:"Conthrax";
+    src:url('./conthrax-sb.otf') format("opentype");
+}
+@font-face{
+    font-family:"Conthrax Light";
+    src:url("./conthrax-light.otf") format("opentype");
+}
+@font-face{
+    font-family:"Tactic Round";
+    src:url("./TacticRound-Med.ttf") format("truetype")
+}
+@font-face{
+    font-family:"Libre Franklin";
+    src:url("./LibreFranklin-VariableFont_wght.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Conthrax Regular";
+    src:url("./Conthrax-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family:"Tactic Round Regular";
+    src:url("./TacticRound-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family:"Tactic Round Bold";
+    src:url("./Tactic-Round-Bold.otf") format("opentype");
+}

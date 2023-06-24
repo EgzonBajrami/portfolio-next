@@ -1,0 +1,12 @@
+.light-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  
+  border-radius: 50%;
+  box-shadow: 0 0 600px 150px rgba(29,78,216,0.15);
+  pointer-events: none;
+
+}
+

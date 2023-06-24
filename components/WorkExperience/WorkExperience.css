@@ -1,0 +1,80 @@
+.workexperience-container{
+    margin-top:100px;
+}
+.workexperience-wrapper{
+    display:grid;
+    grid-template:auto / 20% 80%;
+    gap:30px;
+    padding:25px;
+    border-radius:15px;
+    margin-top:30px;
+}
+
+.workexperience-wrapper:hover{
+    opacity:100;
+    box-shadow:inset 0 1px 0 rgba(148,163,184,0.1);
+    background-color:rgba(148,163,184,0.1);
+}
+
+.work-start-end{
+    display:flex;
+    color: rgb(100 116 139);
+    gap:5px;
+    margin-top:2px;
+}
+
+.work-start-end p{
+    font-family:"Tactic Round Regular";
+    font-size:14px;
+}
+
+.work-start-end span{
+    background-color:rgb(100 116 139);
+    width:10px;
+    height:1px;
+    padding:0px;
+    margin-top:11px;
+}
+
+.work-description{
+    font-family:"Tactic Round Regular";
+    font-size:18px;
+}
+
+.work-title h3{
+    font-family:"Tactic Round Regular";
+    font-size:18px;
+    line-height:20px;
+    margin:0;
+    color:rgb(226 232 240);
+}
+
+.work-title p{
+    font-family:"Tactic Round Regular";
+    font-size:16px;
+    color: rgb(100 116 139);
+}
+.work-body p{
+    font-family:"Tactic Round Regular";
+    font-size:16px;
+    line-height:18px;
+    padding:0px 25px 0px 0px;
+    color: rgb(100 116 139);
+}
+
+.stack-holder{
+    display:flex;
+    flex-wrap:wrap;
+    font-family:"Tactic Round Regular";
+    font-size:16px;
+    line-height:16px;
+    gap:20px;
+    color: rgb(100 116 139);
+}
+
+.stack-holder div{
+    background-color: rgba(45,212,191,.1);
+    color: rgb(94 234 212);
+    border-radius:15px;
+    padding:.5rem .75rem .5rem .75rem;
+}

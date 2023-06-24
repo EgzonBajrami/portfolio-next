@@ -1,0 +1,110 @@
+.reachout-me{
+    margin-top:100px;
+    margin-bottom:100px;
+    text-align:center;
+    font-family:"Tactic Round Bold";
+    font-size:18px;
+    color:rgb(226 232 240);
+}
+.submit-form:hover{
+    opacity:100;
+    box-shadow:inset 0 1px 0 rgba(148,163,184,0.1);
+    background-color:rgba(148,163,184,0.1);
+    border-radius:15px;
+}
+
+
+.input-holder{
+    position:relative;
+    z-index:2;
+    padding:57px 62px 0px 69px;
+  
+
+}
+.email-input{
+    margin-top:37px;
+}
+.text-area-input{
+    margin-top:42px;
+}
+.button-holder{
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    width:100%;
+
+}
+.button-holder button{
+    text-align: center;
+    vertical-align: middle;
+    align-self:flex-end;
+
+    width: 211px;
+    height: 56px;
+    font-family: 'Tactic Round';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    border:none;
+
+    text-transform: uppercase;
+    margin-top:28px;
+    
+    border-radius: 15px;
+    transition:0.5s ease-in-out;
+}
+
+.request-response{
+  
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.success-handler p{
+    color:#fff;
+    font-family: 'Tactic Round';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+.error-handler{
+    position:relative;
+}
+.error-handler p{
+    color:red;
+ 
+    text-align:center;
+    font-family: 'Tactic Round';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.form-buttons-holder{
+    margin-top:50px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-buttons-holder button{
+    background-color: rgba(217, 253, 249, 0.1);
+    color: rgb(94 234 212);
+    border-radius:15px;
+    padding:.5rem .75rem .5rem .75rem;
+    margin-bottom:50px;
+}
+
+@media only screen and (max-width:450px){
+    .input-holder{
+        width:90%;
+        padding:57px 0px 0px 5% ;
+    }
+    .button-holder button{
+        align-self:center;
+
+    }
+}

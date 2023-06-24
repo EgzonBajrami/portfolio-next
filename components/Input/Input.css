@@ -1,0 +1,86 @@
+.form-input-request{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+
+}
+.form-input-request label{
+    font-family: 'Tactic Round';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color:rgb(226 232 240);
+}
+.form-input-request input{
+    background-color:rgba(255, 255, 255, 0.03) !important;
+    background-image:none !important;
+    background:none !important;
+    border-right:none;
+    border-top:none;
+    border-left:none;
+    margin-top:27px;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    font-family: 'Tactic Round Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color:rgb(226 232 240);
+    padding:0px 10px 5px 0px;
+}
+
+
+.form-input-request input:focus{
+    outline:none !important;
+    border-bottom:1px solid #3EA2BF;
+}
+.form-contron--invalid{
+    position:relative;
+}
+.form-control--invalid input{
+    border-bottom:1px solid #ED3535;
+}
+.form-control--invalid p{
+    position:absolute;
+    bottom:-40%;
+    font-family: 'Tactic Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color:#ED3535;
+    margin-top:4px;
+    margin-left:4px;
+}
+.form-input-request textarea{
+ 
+    background:none;
+    margin-top:27px;
+    border: 1px solid  rgb(226 232 240);
+    font-family: 'Tactic Round Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color:rgb(226 232 240);
+    padding:15px 15px 15px 15px;
+    border-radius: 16px;
+    min-height:124px;
+    
+}
+.form-input-request textarea::-webkit-scrollbar{
+    display:none;
+}
+
+.form-input-request textarea:focus{
+    outline:none !important;
+    border:1px solid #3EA2BF;
+}
+.form-control--invalid textarea{
+    border:1px solid #ED3535;
+}
+.invalid-text-area{
+    position:absolute;
+    bottom:-20% !important;
+}
