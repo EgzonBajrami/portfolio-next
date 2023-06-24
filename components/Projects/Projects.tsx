@@ -47,6 +47,7 @@ export default function Projects(){
     }]
     return<>
         <section id="projects" className="projects-holder">
+            <div className="projects-mobile about-mobile">Projects</div>
             {projectData && projectData.map((elem, index:number)=>{
                 return(<Link className="remove-decoration" href={elem.siteUrl} key={index}>
                 <div className="projects-wrapper">

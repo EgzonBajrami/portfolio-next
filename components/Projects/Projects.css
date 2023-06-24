@@ -53,3 +53,29 @@
     color: rgb(100 116 139);
     text-decoration:none;
 }
+
+.projects-mobile{
+    display:none;
+}
+
+@media only screen and (max-width:550px){
+    .projects-mobile{
+        display:block;
+        padding:0px 0px 0px 30px;
+    }
+    .projects-wrapper{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+        padding:30px;
+        border-radius:15px;
+        margin-top:30px;
+    }
+
+    .image-holder{
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+        order:2;
+    }
+}

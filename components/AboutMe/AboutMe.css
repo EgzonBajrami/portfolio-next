@@ -14,3 +14,22 @@
     color:rgb(226 232 240);
     font-weight:bold;
 }
+
+.about-mobile{
+    display:none;
+}
+
+@media only screen and (max-width:550px){
+
+  
+
+    .about-mobile{
+        display:block;
+    
+        font-family:"Tactic Round Bold";
+        font-size:18px;
+        line-height:22px;
+        color:rgb(226 232 240);
+        margin-bottom:30px;
+    }
+}

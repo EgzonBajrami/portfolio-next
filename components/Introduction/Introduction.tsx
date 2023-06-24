@@ -1,13 +1,37 @@
 "use client"
 import './Introduction.css'
 import Link from 'next/link';
-import {usePathname } from "next/navigation"
+import {useState, useEffect} from 'react';
+import {usePathname} from "next/navigation"
 import Instagram from '../../public/images/instagram';
 import Linkedin from '../../public/images/linkedin';
 import Github from '../../public/images/github';
 export default function  Introduction(){
     const pathname = usePathname();
-    console.log(pathname);
+
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+      let isScrolling = false;
+  
+      const handleScroll = () => {
+        if (!isScrolling) {
+          window.requestAnimationFrame(() => {
+            setScrollY(window.scrollY);
+            isScrolling = false;
+          });
+        }
+        isScrolling = true;
+      };
+  
+ 
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+ 
     return<>
     <div className="introduction-container">
         <div className="introduction-title">
@@ -19,21 +43,21 @@ export default function  Introduction(){
         </div>
 
         <ul className="introduction-navigation">
-            <li className={pathname == "/#about" ? "active":"not-active"}>
+            <li className={scrollY<540 ? "active":"not-active"}>
                 <span></span>
                 <Link href="/#about">About</Link>
             </li>
-            <li className={pathname == "/#experience" ? "active":"not-active"}>
+            <li className={scrollY>=540 && scrollY<1500 ? "active":"not-active"}>
                 <span></span>
                 <Link href="/#experience">Experience</Link>
             </li>
-            <li className={pathname == "/#projects" ? "active":"not-active"}>
+            <li className={scrollY>=1500 ? "active":"not-active"}>
                 <span></span>
                 <Link href="/#projects">Projects</Link>
             </li>
         </ul>
         <div className="contact-me">
-            
+
             <Link href="https://www.linkedin.com/in/egzon-bajrami-500445251/">
                 <Linkedin />
             </Link>

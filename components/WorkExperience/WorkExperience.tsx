@@ -16,7 +16,7 @@ interface StringArray extends Array<string> {}
 export default function WorkExperience({data}:WorkDataType){
     return<>
     <div id="experience" className="workexperience-container">
-
+        <div className="experience-mobile about-mobile">Experience</div>
     {data && data.map((elem:WorkData)=>{
         return(
     <div className="workexperience-wrapper" key={elem.currentWork}>

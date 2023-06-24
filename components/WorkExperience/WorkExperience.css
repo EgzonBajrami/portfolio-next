@@ -78,3 +78,30 @@
     border-radius:15px;
     padding:.5rem .75rem .5rem .75rem;
 }
+
+.experience-mobile{
+    display:none;
+}
+
+
+
+@media only screen and (max-width:1024px){
+
+    
+    .workexperience-wrapper{
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+        padding:25px;
+        border-radius:15px;
+        margin-top:30px;
+    }
+    
+}
+
+@media only screen and (max-width:550px){
+    .experience-mobile{
+        display:block;
+        padding:0px 0px 0px 25px;
+    }
+}
