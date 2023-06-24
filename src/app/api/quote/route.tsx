@@ -10,6 +10,12 @@ const transporter = nodemailer.createTransport({
   },
 })
 
+interface RequestInterface{
+  name:string,
+  email:string,
+  request:string
+}
+
 const sendMail = (data:RequestInterface) => {
 
   return {
@@ -20,24 +26,25 @@ const sendMail = (data:RequestInterface) => {
       ${data.request}`
   }
 }
-interface RequestInterface{
-  name:string,
-  email:string,
-  request:string
-}
+
 
 export async function POST(request:NextRequest){
     const connected =await  request.json();
-
+    console.log(connected);
 
     const body = sendMail(connected.data);
-    const info = await transporter.sendMail({
+    const info =  transporter.sendMail({
       from: process.env.EMAIL,
       to:  process.env.RECEIVING,
       subject: body.subject,
       text: body.text,
       html: body.html,
-    })
+    }, (err, data) => {
+      if (err) {
+        console.log(err);
+        NextResponse.json(err);
+      } 
+  })
 
-    return NextResponse.json({info});
+    return NextResponse.json({connected});
 }
