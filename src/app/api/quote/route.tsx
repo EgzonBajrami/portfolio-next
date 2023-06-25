@@ -16,7 +16,7 @@ interface RequestInterface{
   request:string
 }
 
-const sendMail = (data:RequestInterface) => {
+const sendMail = (data:any) => {
 
   return {
     subject: `Request from ${data.name}`,
@@ -33,18 +33,24 @@ export async function POST(request:NextRequest){
     console.log(process.env.EMAIL);
 
     const body = sendMail(connected.data);
-    const info =  transporter.sendMail({
+    const mailData =  {
       from: process.env.EMAIL,
       to:  process.env.RECEIVING,
       subject: body.subject,
       text: body.text,
       html: body.html,
-    }, (err, data) => {
-      if (err) {
-        console.log(err);
-        NextResponse.json(err);
-      } 
-  })
+    }
 
-    return NextResponse.json({connected});
+  const result = await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        resolve(info);
+      }
+    });
+  });
+
+    return NextResponse.json({result});
 }
