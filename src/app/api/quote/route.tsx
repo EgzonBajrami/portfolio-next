@@ -30,7 +30,7 @@ const sendMail = (data:RequestInterface) => {
 
 export async function POST(request:NextRequest){
     const connected =await  request.json();
-    console.log(connected);
+    console.log(process.env.EMAIL);
 
     const body = sendMail(connected.data);
     const info =  transporter.sendMail({
