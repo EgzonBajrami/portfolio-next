@@ -2,12 +2,15 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import nodemailer from 'nodemailer'
 const transporter = nodemailer.createTransport({
-  service:"outlook",
+
   port: 587,
+  host:process.env.HOST,
   auth: {
-    user: process.env.EMAIL,
+    user: process.env.LOGIN,
     pass: process.env.PASSWORD,
   },
+  secure:false,
+  
 })
 
 interface RequestInterface{
@@ -45,7 +48,7 @@ export async function POST(request:NextRequest){
     transporter.sendMail(mailData, (err, info) => {
       if (err) {
         console.error(err);
-        reject(err);
+        NextResponse.json({err})
       } else {
         resolve(info);
       }
