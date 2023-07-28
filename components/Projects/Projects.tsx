@@ -18,8 +18,8 @@ export default function Projects(){
     },{
         title:"EB Real Estate",
         image:ebrealestate,
-        textDescription:"Website designed for a real estate company. Main purpose of it is to post their properties, apartments or houses that they have contracted. Currently under re-design.",
-        stack:["NextJs", "Headless Wordpress CMS", "Bootstrap", "Typescript"],
+        textDescription:"Website designed for a real estate company. While making use of Next.js SSR and SSG to make the website much more SEO friendly than your average React App!",
+        stack:["NextJs Backend", "Bootstrap", "Typescript"],
         siteUrl:"https://www.eb-patundshmeri.com/",
     },{
         title:"New Health Care",
