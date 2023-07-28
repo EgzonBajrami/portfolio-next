@@ -37,7 +37,7 @@ export default function  Introduction(){
         <div className="introduction-title">
      
             <h1>Egzon Bajrami</h1>
-            <h2>Web Developer at Bord Agency</h2>
+            <h2>Full Stack Web Developer</h2>
              <p>I'm a full stack web developer with focus on user experience</p>  
 
         </div>

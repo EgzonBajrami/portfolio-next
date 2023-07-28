@@ -5,6 +5,7 @@ import nhc from '../../public/images/nhc.webp'
 import ecommerce from '../../public/images/ecommerce.webp'
 import pizza from '../../public/images/pizza.webp'
 import argess from '../../public/images/argess.webp'
+import mesimiplus from '../../public/images/MesimiPlus.webp'
 import Image from 'next/image';
 import Link from 'next/link';
 export default function Projects(){
@@ -44,12 +45,18 @@ export default function Projects(){
         textDescription:"This is a landing page for Argess Monitoring Enterprise, designed with the purpose of highlighting the services that the company offers. Currently under development!",
         stack:["NextJs Full Stack", "Javascript", "Bootstrap", "CSS"],
         siteUrl:"https://next-argess.vercel.app/"
+    },{
+        title:"Mësimi Plus",
+        image:mesimiplus,
+        textDescription:"Landing page for a course that helps develop children. Key features are optimized fully for SEO, optimized for faster load speed and better user experience. Also connected to a google forms to send post requests there. Still in development!",
+        stack:["Javascript", "HTML", "CSS", "Bootstrap"],
+        siteUrl:"https://mesimi-plus.netlify.app/"
     }]
     return<>
         <section id="projects" className="projects-holder">
             <div className="projects-mobile about-mobile">Projects</div>
             {projectData && projectData.map((elem, index:number)=>{
-                return(<Link className="remove-decoration" href={elem.siteUrl} key={index}>
+                return(<Link className="remove-decoration" href={elem.siteUrl} target="_blank" key={index}>
                 <div className="projects-wrapper">
                     <div className="image-holder">
                         <Image src={elem.image} alt={elem.title} width={elem.image.width} height={elem.image.height} />
