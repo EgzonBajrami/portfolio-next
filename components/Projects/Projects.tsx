@@ -1,7 +1,7 @@
 import './Projects.css'
-import conadKosova from '../../public/images/conadkosova.webp'
+
 import ebrealestate from '../../public/images/ebrealestate.webp'
-import nhc from '../../public/images/nhc.webp'
+
 import ecommerce from '../../public/images/ecommerce.webp'
 import pizza from '../../public/images/pizza.webp'
 import argess from '../../public/images/argess.webp'
@@ -10,23 +10,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 export default function Projects(){
     const projectData = [{
-        title:"Conad Kosova",
-        image:conadKosova,
-        textDescription:"A website designed with the purpose of posting the translated products from Italian to Albanian for the store Conad Kosova. It contains a short description about the store and their products and their sales.",
-        stack:["React", "NodeJs", "Bootstrap", "CoreUi" ],
-        siteUrl:"https://conadkosova.com/"
-    },{
         title:"EB Real Estate",
         image:ebrealestate,
         textDescription:"Website designed for a real estate company. While making use of Next.js SSR and SSG to make the website much more SEO friendly than your average React App!",
         stack:["NextJs Backend", "Bootstrap", "Typescript"],
         siteUrl:"https://www.eb-patundshmeri.com/",
-    },{
-        title:"New Health Care",
-        image:nhc,
-        textDescription:"New Health Care, a website designed for the single purpose of an advertisement of their health care system.",
-        stack:["React", "Bootstrap", "CSS", "HTML5"],
-        siteUrl:"https://www.nhc-ks.com/"
     },{
         title:"E-Commerce",
         image:ecommerce,
