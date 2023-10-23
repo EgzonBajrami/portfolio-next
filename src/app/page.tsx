@@ -8,12 +8,20 @@ import Projects from '../../components/Projects/Projects'
 import ReachOut from '../../components/ReachOut/ReachOut'
 
 export default function Home() {
-  const datasToSend = [{
+  const datasToSend = [
+    {
+      currentWork:"Talenko Agency",
+      position:"Web Developer",
+      yearStarted:"2023",
+      yearEnd:"Present",
+      textDescription:"In my current position, I play an integral role in the development and upkeep of web projects. I engage in active collaboration with a team of professionals, collectively crafting efficient and scalable solutions. I harness the capabilities of React and Next.js to construct robust front-end interfaces, ensuring seamless user experiences. As part of my responsibilities, I proficiently utilize PHP and WordPress to create dynamic web solutions, facilitating the development of interactive web applications that seamlessly communicate with databases and external services.",
+      stack:['React', 'NextJs', 'NodeJs', 'Javascript', 'PhP', 'Bootstrap', 'SCSS', 'Wordpress', 'Woocommerce']
+    },{
     currentWork:"Bord Agency",
     position:"Junior Web Developer",
     yearStarted:"2023",
-    yearEnd:"Present",
-    textDescription:"In my current role, I actively contribute to the development and maintenance of web projects. I collaborate with a team of professionals to design and implement efficient and scalable solutions. Leveraging the power of React and Next.js, I create robust front-end interfaces that provide seamless user experiences. As part of my responsibilities, I also work with Node.js to develop server-side logic, build APIs, and handle data management. This allows me to create interactive web applications that communicate with databases and external services.",
+    yearEnd:"2023",
+    textDescription:"In my previous role, I actively contributed to the development and maintenance of web projects. I collaborated with a team of professionals to design and implement efficient and scalable solutions. Leveraging the power of React and Next.js, I created robust front-end interfaces that provided seamless user experiences. As part of my responsibilities, I also worked with Node.js to develop server-side logic, build APIs, and handle data management. This allowed me to create interactive web applications that communicated with databases and external services.",
     stack:['React', 'NextJs', 'NodeJs', 'Javascript', 'PhP', 'Bootstrap', 'SCSS', 'Wordpress', 'jQuery']
   },{
     currentWork:"Freelance Web Developer",
